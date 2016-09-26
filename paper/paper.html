@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+<p>[Git logo] (../images/git-logo.png)</p>
+<p>Git is a distributed version control system that allows you to track changes made to files and folders inside a repository. With Git, you can easily go back to previous versions of your work, and you can also easily collaborate with other people, even if multiple people are modifying the same file. Users have a local repository on their own machines, as well as a remote repository on a hosting service such as Github, so that the repository is also accessible on the web and others can also view and collaborate on it.</p>
+<p>In using Git, it's good practice to commit your changes frequently whenever something changes in your repository, and also add a descriptive message to the commit briefly describing what had been changed. In this way, it is easier for the user to view the changes made to their own repository, and it is also easier for collaborators to see what changes others have made.</p>
+<p>To initialize a local repository on your own machine in the current folder, use <code>git init</code>. Then you can link this local repository to a remote one using <code>git remote add origin url</code>, where url is the Github-supplied url of your remote repository.</p>
+<p>Use <code>git add filename</code> to add a specific file in the repository to the staging area. Then use <code>git commit -m &quot;commit message&quot;</code> to save the changes in the staging area and add a commit message. Finally use <code>git push origin</code>, along with the name of your current branch to push your local changes to the remote repository.</p>
+<p>To view the current status of your repository, you can use <code>git status</code> to view modified untracked files and changes not staged for commit. You can also view a log of all the repository's previous commits by using <code>git log</code>.</p>
+<p>To rollback your repository to a previous commit, you can use the <code>git checkout commitid</code> command to return your whole repository to the state it was in from the previous commit with the unique commitid.</p>
+<p>In addition, you can create branches with Git to make experimental changes to the repository without affecting the main branch, and if the changes are satisfactory, you can merge them into the main branch. Use the command <code>git checkout -b branchname</code> to create a new branch locally with a name you have selected, and then use <code>git push origin branchname</code> to push the branch to your remote repository. Collaborators can use this branch feature to test out new changes, and then make pull requests to the main branch on Github so others can review the changes before deciding to merge or reject the proposed changes.</p>
+</body>
+</html>
