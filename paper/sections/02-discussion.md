@@ -49,7 +49,7 @@ In using Git, it's good practice to commit your changes frequently whenever some
 
 To initialize a local repository on your own machine in the current folder, use `git init`. Then you can link this local repository to a remote one using `git remote add origin url`, where url is the Github-supplied url of your remote repository. 
 
-Use `git add filename` to add a specific file in the repository to the staging area. Then use `git commit -m "commit message"` to save the changes in the staging area and add a commit message. Finally use `git push origin`, along with the name of your current branch to push your local changes to the remote repository. 
+Use `git add filename` to add a specific file in the repository to the staging area. Then use `git commit -m "commit message"` to save the changes in the staging area and add a commit message. Finally use `git push origin`, along with the name of your current branch, such as `master`, to push your local changes to the remote repository. 
 
 To view the current status of your repository, you can use `git status` to view modified untracked files and changes not staged for commit. You can also view a log of all the repository's previous commits by using `git log`. 
 
@@ -128,12 +128,12 @@ You can create unordered lists in Markdown with `*` as bullets, and ordered list
 3. Repeat
 ```
 
-To add a link to your Markdown file, simply format it `[Text to Click](url)`. Similarly for images, the format is `![Image Caption](link or path to image)`. 
+To add a link to your Markdown file, simply format it `[Text to Click](url)`. Similarly for images, the format is `![Image Alternative Text](link or path to image)`. 
 
 To add a code block to your file, as I have done above, simply wrap your code with three `` ``` ``. For inline code, just wrap it with one  `` ` ``. 
 
 
 ## Resources
 
-I used all the above resources to create this project, as well as the command line interface the the Sublime text editor. Actually using the tools was "easy", as the Makefile made combining my sections into one paper very simple through automation, Git and Github helped me keep track of my work, Pandoc was used in my Makefile to easily convert my paper.md to my paper.html, and Markdown was used to write all the content sections of my project and also helped to easily display code sections. The challenging part was learning how to use each of these tools, but once you've gotten past the initial learning curve, it makes all of your future projects much easier. In particular, I was confused by the Makefile and its role in this project, but later I understood that its purpose was to concatenate the section files into one paper.md file, which also had to be converted into a paper.html file. The most time-consuming part of the project was writing the descriptions for each of the tools. Even though I had a general idea of how each of them worked, I had to consider how to explain these tools to others who might not know how to use them. This project took about 6 hours to complete. 
+I used all the above resources to create this project, as well as the command line interface and the Sublime text editor. Actually using the tools was "easy", as the Makefile made combining my sections into one paper very simple through automation, Git and Github helped me keep track of my work, Pandoc was used in my Makefile to easily convert my paper.md to my paper.html, and Markdown was used to write all the content sections of my project and also helped to easily display code sections. The challenging part was learning how to use each of these tools, but once you've gotten past the initial learning curve, it makes all of your future projects much easier. In particular, I was confused by the Makefile and its role in this project, but later I understood that its purpose was to concatenate the section files into one paper.md file, which also had to be converted into a paper.html file. The most time-consuming part of the project was writing the descriptions for each of the tools. Even though I had a general idea of how each of them worked, I had to consider how to explain these tools to others who might not know how to use them. This project took about 6 hours to complete. 
 
